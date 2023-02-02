@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/logo_optica" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnIngresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#68C3E0"
