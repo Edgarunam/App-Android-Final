@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OpticaMexicana"
         tools:targetApi="31">
-        <activity
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
