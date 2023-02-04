@@ -23,15 +23,15 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="143dp"
-        android:layout_height="210dp"
+        android:layout_width="111dp"
+        android:layout_height="143dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673"
-        app:srcCompat="@drawable/male_lab_coat_svgrepo_com" />
+        app:layout_constraintVertical_bias="0.615"
+        app:srcCompat="@drawable/doctor_holding_clipboard_fixed_arm" />
 
     <TextView
         android:id="@+id/textView"
@@ -70,21 +70,23 @@
         app:layout_constraintVertical_bias="0.469" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/blue_btn"
+        android:id="@+id/button3"
+        android:layout_width="115dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/nunito"
-        android:shadowColor="#000000"
+        android:shadowColor="#8E8E8E"
+        android:shadowRadius="3"
         android:text="Iniciar"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.872" />
+        app:layout_constraintVertical_bias="1.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
