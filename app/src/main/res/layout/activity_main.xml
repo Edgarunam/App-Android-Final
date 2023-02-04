@@ -54,18 +54,22 @@
 
     <Button
         android:id="@+id/LgIngresar"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="82dp"
+        android:background="@drawable/blue_btn"
         android:backgroundTint="#68C3E0"
         android:onClick="Click2"
         android:text="Ingresar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@+id/whiteRectangle"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.129" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -87,27 +91,11 @@
         app:layout_constraintVertical_bias="0.648" />
 
     <TextView
-        android:id="@+id/btnRecuperar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="40dp"
-        android:fontFamily="@font/nunito"
-        android:text="Recuperar"
-        android:textColor="#68C3E0"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/nunito"
         android:text="Olvido su contraseña?"
         android:textColor="#0C0C0C"
@@ -115,6 +103,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnRecuperar"
         app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btnRecuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nunito"
+        android:text="Recuperar"
+        android:textColor="#68C3E0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
         app:layout_constraintStart_toStartOf="parent" />
 
 
