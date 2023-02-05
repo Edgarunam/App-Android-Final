@@ -70,9 +70,10 @@
         app:layout_constraintVertical_bias="0.469" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnExamen"
         android:layout_width="115dp"
-        android:layout_height="51dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_white_iniciar"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/nunito"
         android:shadowColor="#8E8E8E"
@@ -83,10 +84,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.933" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
