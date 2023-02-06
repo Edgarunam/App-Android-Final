@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Óptica Mexicana</string>
+    <string name="title">Salir</string>
+    <string name="supporting_text">support</string>
+    <string name="cancel">cancel</string>
+    <string name="decline">declinar</string>
+    <string name="accept">aceptar</string>
 </resources>
