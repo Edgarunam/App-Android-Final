@@ -76,6 +76,7 @@
         android:background="@drawable/btn_white_iniciar"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/nunito"
+        android:onClick="clcexamen"
         android:shadowColor="#8E8E8E"
         android:shadowRadius="3"
         android:text="Iniciar"

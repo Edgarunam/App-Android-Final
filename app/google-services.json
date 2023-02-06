@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "713058839465",
+    "project_id": "optica-mexicana",
+    "storage_bucket": "optica-mexicana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713058839465:android:c56ae12447540670cff2b8",
+        "android_client_info": {
+          "package_name": "com.edgar.tobon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713058839465-hrvil2mols2u8fh53tofefapml051b71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlmPlkc0Ab2R3s4SxCPozwr2qhTx4w3Ng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713058839465-hrvil2mols2u8fh53tofefapml051b71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713058839465:android:82328c86500b65a5cff2b8",
+        "android_client_info": {
+          "package_name": "dgtic.unam.optica_mexicana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713058839465-hrvil2mols2u8fh53tofefapml051b71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlmPlkc0Ab2R3s4SxCPozwr2qhTx4w3Ng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713058839465-hrvil2mols2u8fh53tofefapml051b71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
