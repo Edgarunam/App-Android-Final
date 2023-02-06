@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
@@ -21,9 +23,13 @@ class MainActivity : AppCompatActivity() {
         val btnIngresar:Button = findViewById(R.id.LgIngresar)
         val txtemail:EditText = findViewById(R.id.correlg)
         val txtpasswd:EditText = findViewById(R.id.passwordlg)
+        val btnRecuperar:TextView = findViewById(R.id.btnRecuperar)
         firebaseAuth=Firebase.auth
         btnIngresar.setOnClickListener{
             signIn(txtemail.text.toString(),txtpasswd.text.toString())
+        }
+        btnRecuperar.setOnClickListener {
+            Toast.makeText(baseContext,"Se ha enviado la contraseña a su correo", Toast.LENGTH_SHORT).show()
         }
     }
     private fun signIn(email:String,password: String){

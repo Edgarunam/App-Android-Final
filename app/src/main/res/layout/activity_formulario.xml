@@ -89,7 +89,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edad"
+            android:id="@+id/usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -124,7 +124,7 @@
             android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edad" />
+            app:layout_constraintTop_toBottomOf="@+id/usuario" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -135,7 +135,7 @@
             android:layout_marginTop="20dp"
             android:hint="Años"
             app:layout_constraintStart_toEndOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/edad"
+            app:layout_constraintTop_toBottomOf="@+id/usuario"
 
             >
 
@@ -156,7 +156,7 @@
             android:textColor="#020202"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textField"
-            app:layout_constraintTop_toBottomOf="@+id/edad" />
+            app:layout_constraintTop_toBottomOf="@+id/usuario" />
 
         <RadioButton
             android:id="@+id/radioButton2"
@@ -168,7 +168,7 @@
             android:text="Femenino"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/radioButton"
-            app:layout_constraintTop_toBottomOf="@+id/edad" />
+            app:layout_constraintTop_toBottomOf="@+id/usuario" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ocupacion"
