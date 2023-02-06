@@ -13,6 +13,55 @@
         tools:context=".MainActivity">
 
 
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="174dp"
+            android:fontFamily="@font/nunito"
+            android:text="Paciente"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:layout_marginEnd="174dp"
+            android:fontFamily="@font/nunito"
+            android:text="Paciente"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="174dp"
+            android:fontFamily="@font/nunito"
+            android:text="Antecedentes Patologicos y Heredofamiliares"
+            android:textColor="#68C3E0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="51dp"
@@ -29,40 +78,38 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="250dp"
             android:layout_marginEnd="174dp"
             android:fontFamily="@font/nunito"
-            android:text="Paciente"
+            android:text="Ocupación"
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textField"
             app:layout_constraintEnd_toStartOf="@+id/imageView6"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.073"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textField"
+            android:id="@+id/edad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            app:startIconDrawable="@drawable/person"
-            app:startIconContentDescription="content_description_end_icon"
             android:hint="Nombre del paciente"
+            app:endIconMode="clear_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:endIconMode="clear_text"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="content_description_end_icon"
+            app:startIconDrawable="@drawable/person">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/namePaciente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
         <TextView
@@ -72,17 +119,118 @@
 
 
             android:layout_marginStart="4dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/nunito"
+            android:layout_marginTop="38dp"
 
+            android:fontFamily="@font/nunito"
             android:text="Edad"
             android:textColor="#000000"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textField" />
+            app:layout_constraintTop_toBottomOf="@+id/edad" />
 
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="Años"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/edad"
 
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nunito"
+            android:text="Masculino"
+            android:textColor="#020202"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textField"
+            app:layout_constraintTop_toBottomOf="@+id/edad" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nunito"
+            android:text="Femenino"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            app:layout_constraintTop_toBottomOf="@+id/edad" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ocupacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:hint="Ingrese la ocupación"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="content_description_end_icon"
+            app:startIconDrawable="@drawable/work_on_laptop_work">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pacienteOcupacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="480dp"
+            android:checkedButton="@+id/radio_button_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radio_button_1"
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="@font/nunito"
+                android:text="Diabetes"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_button_2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="@font/nunito"
+                android:text="Hipertensión"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_button_3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:fontFamily="@font/nunito"
+                android:text="Alergias"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
