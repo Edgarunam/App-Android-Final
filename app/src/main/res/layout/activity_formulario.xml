@@ -69,7 +69,7 @@
             app:layout_constraintHorizontal_bias="0.996"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/home_house_ui_svgrepo_com" />
+            app:srcCompat="@drawable/return_svgrepo" />
 
 
         <TextView
@@ -289,7 +289,7 @@
             android:layout_marginTop="750dp"
             android:layout_marginEnd="174dp"
             android:fontFamily="@font/nunito"
-            android:text="Antecedentes Patologicos y Heredofamiliares"
+            android:text="Hábitos de Salud"
             android:textColor="#68C3E0"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -454,7 +454,60 @@
             app:layout_constraintHorizontal_bias="0.073"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/texVi9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1380dp"
+            android:layout_marginEnd="174dp"
+            android:fontFamily="@font/nunito"
+            android:text="Presion"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Presion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1430dp"
+            android:hint="Presion"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="content_description_end_icon"
+            app:startIconDrawable="@drawable/sphygmomanometer">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/namePresion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/LgIngresar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/blue_btn"
+            android:backgroundTint="#68C3E0"
+            android:onClick="ClickIng"
+            android:text="Siguiente"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Presion" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
