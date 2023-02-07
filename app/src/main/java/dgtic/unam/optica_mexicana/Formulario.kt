@@ -1,24 +1,28 @@
 package dgtic.unam.optica_mexicana
 
+import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.CalendarContract.Colors
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class Formulario : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formulario)
 
 
         val backBtn:ImageView = findViewById(R.id.backHome)
+        val finalizarbtn:Button = findViewById(R.id.btnfinalizar)
+
+        finalizarbtn.setOnClickListener {
+            Toast.makeText(baseContext, "Pdf Generado y guardado en el dispositivo", Toast.LENGTH_SHORT).show()
+        }
         backBtn.setOnClickListener {
 
             val builder = AlertDialog.Builder(this)

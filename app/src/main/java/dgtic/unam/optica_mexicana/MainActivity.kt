@@ -10,7 +10,6 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnIngresar:Button = findViewById(R.id.LgIngresar)
+        val btnIngresar:Button = findViewById(R.id.btnfinalizar)
         val txtemail:EditText = findViewById(R.id.correlg)
         val txtpasswd:EditText = findViewById(R.id.passwordlg)
         val btnRecuperar:TextView = findViewById(R.id.btnRecuperar)

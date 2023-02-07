@@ -198,7 +198,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginTop="480dp"
-            android:checkedButton="@+id/radio_button_1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -493,7 +492,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/LgIngresar"
+            android:id="@+id/btnfinalizar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -502,7 +501,7 @@
             android:background="@drawable/blue_btn"
             android:backgroundTint="#68C3E0"
             android:onClick="ClickIng"
-            android:text="Siguiente"
+            android:text="Finalizar"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
